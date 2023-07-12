@@ -1,0 +1,89 @@
+body {
+  font-family: Oxanium, cursive;
+  color: white;
+  background-color: black;
+}
+
+body::before{
+    content: "";
+    background-image: url(../images/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;    
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.char-selection {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 30px;
+  min-height: calc(100vh - 585px);
+  justify-content: center;
+}
+
+.char-selection .char-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.char-selection .characters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 585px;
+  gap: 25px;
+}
+
+.char-selection .characters .title-list {
+  letter-spacing: 0.3em;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #47f4ff;
+  width: 100%;
+  text-align: center;
+}
+
+.char-list .character img {
+  width: 100%;
+  height: 100%;
+}
+
+.char-list .character.selected {
+  box-shadow: 0 0 24px 5px #0271f7;
+}
+
+.selected-char {
+  text-align: center;
+  max-height: 530px;
+}
+
+.selected-char .selected-char-image {
+  width: 430px;
+  height: 430px;
+}
+
+.selected-char .char-name {
+  border-bottom: 2px solid #47f4ff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.selected-char .char-description {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 20px;
+  width: 420px;
+}

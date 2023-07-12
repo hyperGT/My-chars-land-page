@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsively.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Choose a character from</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="./src/images/logo.svg" alt="logo" />
+    </header>
+
+    <main class="char-selection">
+      <!--area de seleçao de personagem-->
+      <section class="characters">
+        <!--char list slc section-->
+        <h1 class="title-list">Select the character</h1>
+        <ul class="char-list">
+          <!--char list-->
+          <li class="character selected" id="ciclope" data-name="Ciclope" data-description="Ciclope has the power to shoot optic blasts, but he can't control them">
+            <img src="src/images/card-ciclope.jpg" alt="ciclope" />
+          </li>
+          <li class="character" id="jean-grey" data-name="Jean Grey" data-description=" Test Jean Grey ">
+            <img src="src/images/card-jean-grey.jpg" alt="jean-grey" />
+          </li>
+          <li class="character" id="lince-negra" data-name="Lince Negra" data-description=" Teste Lince Negra">
+            <img src="src/images/card-lince-negra.jpg" alt="lince-negra" />
+          </li>
+          <li class="character" id="magneto" data-name="Magneto" data-description=" Test magnet">
+            <img src="src/images/card-magneto.jpg" alt="magneto" />
+          </li>
+          <li class="character" id="noturno" data-name="Noturno" data-description=" test Not">
+            <img src="src/images/card-noturno.jpg" alt="noturno" />
+          </li>
+          <li class="character" id="tempestade" data-name="Tempestade" data-description=" test temp">
+            <img src="src/images/card-tempestade.jpg" alt="tempestade" />
+          </li>
+          <li class="character" id="vampira" data-name="Vampira" data-description=" test vampire">
+            <img src="src/images/card-vampira.jpg" alt="vampira" />
+          </li>
+          <li class="character" id="wolverine" data-name="Wolverine" data-description=" wolverino ">
+            <img src="src/images/card-wolverine.jpg" alt="wolverine" />
+          </li>
+        </ul>
+      </section>
+      <!--end char list section-->
+      <section class="selected-char">
+        <img
+          class="selected-char-image"  
+          src="src/images/card-ciclope.png"
+          alt="personagem ciclope selecionado"
+        /> <!--class name: ciclope-selected-->
+
+        <div class="char-info">
+          <h2 class="char-name" id="char-name-id">Ciclope</h2>
+          <p class="char-description" id="char-description-id">
+            Ciclope has the power to shoot optic blasts, but he can't control
+            them
+          </p>
+        </div>
+      </section>
+      <!-- end slcted char section-->
+    </main>
+    <!--end selecao de personagem-->
+    <script src="./src/js/app.js"></script>
+  </body>
+</html>

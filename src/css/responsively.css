@@ -1,0 +1,31 @@
+@media (max-width: 1120px) {
+  .header .logo {
+    max-width: 190px;
+  }
+  .char-selection {
+    flex-direction: column-reverse;
+    max-width: 430px;
+    margin: 0 auto;
+  }
+  .char-selection .characters {
+    margin-top: 30px;
+  }
+  .char-selection .characters .title-list {
+    font-size: 16px;
+  }
+  .char-selection .char-list {
+    gap: 10px;
+  }
+  .char-selection .characters img {
+    width: 80px;
+  }
+  .selected-char .selected-char-image {
+    width: 350px;
+    height: 350px;
+  }
+  .selected-char .char-info {
+    width: 80%;
+    font-size: 16px;
+    margin: 20px auto;
+  }
+}
